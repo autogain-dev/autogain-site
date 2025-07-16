@@ -6,7 +6,18 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        bounceIn: 'bounceIn 1s ease-out'
+      },
+      keyframes: {
+        bounceIn: {
+          '0%': { opacity: 0, transform: 'scale(0.5)' },
+          '60%': { opacity: 1, transform: 'scale(1.1)' },
+          '100%': { transform: 'scale(1)' }
+        }
+      }
+    },
   },
   plugins: [],
 }
