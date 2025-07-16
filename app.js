@@ -4,3 +4,9 @@ function switchLanguage(lang) {
         el.textContent = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
     });
 }
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    }, 3000);
+});
