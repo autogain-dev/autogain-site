@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>AutoGain</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
 </head>
 <body>
-    <div id="loader">
-        <div class="logo-ball"></div>
-        <p class="loading-text">Chargement de AutoGain...</p>
+    <div id="intro">
+        <div class="animated-ball">
+            <svg class="logo-ag" viewBox="0 0 200 200">
+                <path d="M40,100 Q70,20 100,100 T160,100" stroke="#00aaff" fill="none" stroke-width="10" />
+                <text x="50%" y="140" text-anchor="middle" fill="#00aaff" font-size="28" font-family="Arial" opacity="0.9">AutoGain</text>
+            </svg>
+        </div>
     </div>
-    <div id="main-content" style="display:none;">
+    <div id="main-content" style="display: none;">
         <header>
             <div class="logo">AutoGain</div>
             <div class="lang-switch">

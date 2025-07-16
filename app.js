@@ -6,7 +6,7 @@ function switchLanguage(lang) {
 }
 window.addEventListener('load', () => {
     setTimeout(() => {
-        document.getElementById('loader').style.display = 'none';
+        document.getElementById('intro').style.display = 'none';
         document.getElementById('main-content').style.display = 'block';
-    }, 3000);
+    }, 3200);
 });
